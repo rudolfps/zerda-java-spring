@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
- * Created by gabkamabka on 2017.01.11..
+ * Created by rudolfps on 2017.01.11..
  */
 @Data
 @Entity

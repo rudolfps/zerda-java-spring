@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by gabkamabka on 2017.01.11..
+ * Created by rudolfs on 2017.01.11..
  */
 @Service
 public class WelcomeService {
