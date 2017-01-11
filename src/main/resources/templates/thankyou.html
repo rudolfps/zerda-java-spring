@@ -1,0 +1,17 @@
+<html>
+
+
+<body>
+<h3>Projects</h3>
+<p> Early access of Greenfox Academy Zerda Raptor Projects with tech tags </p>
+
+<div>
+    <ul>
+        <th:block th:object="${project}" th:each="item : ${list}">
+            <li th:text="${project.name}"></li>
+            <li th:text="${project.developmentFramework}"></li>
+        </th:block>
+    </ul>
+</div>
+</body>
+</html>

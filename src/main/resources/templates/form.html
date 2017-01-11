@@ -1,0 +1,27 @@
+<html>
+<body>
+<form action="#" th:action="@{/}" th:object="${welcomeForm}" method="post">
+    <table>
+        <p> Thank you for visiting our website! To get early access to our planned projects, please fill in the following quick questionnaire: </p>
+        <tr>
+            <td>Describe your experience with Green Fox Academy so far:</td>
+            <td><input type="text"  rows="6" th:field="*{experience}" /></td>
+            <td th:if="${#fields.hasErrors('experience')}" th:errors="*{experience}">Experience Error</td>
+        </tr>
+        <tr>
+            <td>On a scale of 1 to 10, how likely are you to recommend Green Fox Academy to a friend?</td>
+            <td><input type="text" th:field="*{rating}" /></td>
+            <td th:if="${#fields.hasErrors('rating')}" th:errors="*{rating}">Rating Error</td>
+        </tr>
+        <tr>
+            <td>Your email address:</td>
+            <td><input type="text" th:field="*{email}" /></td>
+            <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</td>
+        </tr>
+        <tr>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
